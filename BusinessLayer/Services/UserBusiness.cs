@@ -38,5 +38,19 @@ namespace BusinessLayer.Services
             }
 
         }
+
+        public UserDetails Login(UserLogin user)
+        {
+            try
+            {
+                var result = users.Login(user);
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

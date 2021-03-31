@@ -8,5 +8,6 @@ namespace BusinessLayer.IBusiness
     public interface IUserBusiness
     {
         UserDetails Registration(UserRegistration user);
+        UserDetails Login(UserLogin user);
     }
 }

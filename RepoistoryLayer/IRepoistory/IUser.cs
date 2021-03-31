@@ -8,5 +8,6 @@ namespace RepoistoryLayer.IRepoistory
     public interface IUser
     {
         UserDetails Registration(UserRegistration userRegistration);
+        UserDetails Login(UserLogin user);
     }
 }
